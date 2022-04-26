@@ -22,3 +22,12 @@ last_modified_at: 2019-04-13T08:06:00-05:00
 이 글의 제목은 {{ poset.md.title }}이고
 
 마지막 수정 시간은 {{ post.last_modified_at }}이다.
+
+<header class="header-page">
+  <h1 class="page-title">{{page.title}}</h1>
+  {% if page.last_modified_at %}
+    <div class="page-date"><span>{{page.last_modified_at | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+  {% else %}
+    <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+  {% endif %}
+</header>
