@@ -42,4 +42,4 @@ __글자 강조__
 
 링크 사용하기
 
-[Hisnet](https://hisnet.handong.edu/)
+[Hisnet](https://hisnet.handong.edu)
